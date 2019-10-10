@@ -30,20 +30,44 @@ var startGame = function() {
     $("#targetScore").html(targetScore);
 
     console.log("Target Score: " + targetScore);
-//     console.log("Blue: " + blue + " | "Red: " + red + " | "Green: " + green + " | "Yellow: " + yellow + ");
+}
+
+var addBlue = function(blue) {
+    currentScore + blue;
+    console.log("Your Score: " + currentScore);
+}
+
+var addRed = function(red) {
+    currentScore + red;
+    console.log("Your Score: " + currentScore);
+}
+
+var addGreen = function(green) {
+    currentScore + green;
+    console.log("Your Score: " + currentScore);
+}
+
+var addYellow = function(yellow) {
+    currentScore + yellow;
+    console.log("Your Score: " + currentScore);
 }
 
 
 // Functions being called
 startGame();
+
 $("#blue").click(function() {
+    addBlue(blue);
 });
 
 $("#red").click(function() {
+    addRed(red);
 });
 
 $("#green").click(function() {
+    addGreen(green);
 });
 
 $("#yellow").click(function() {
+    addYellow(yellow);
 });
